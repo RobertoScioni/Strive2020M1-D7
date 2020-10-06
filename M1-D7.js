@@ -71,10 +71,18 @@
         pics[i].style.display=visibility       
      }
  }
+//excercise 11
+    const makeItClickable=()=>{
+        document.querySelector("h1").addEventListener("click",rndColor)
+    }
+    const rndColor=(e)=>{
+        e.srcElement.style.color=Math.round(Math.random()*16777215).toString(16)
+    }
 //excercise 1
 const load=()=>{
    // alert("WELCOME!!!")
     makeThemMagnifiable()
+    makeItClickable()
     document.querySelector("H1").addEventListener("mouseenter",addClassToTitle)
     document.querySelector("H1").addEventListener("mouseleave",removeClassFromTitle)
 }
