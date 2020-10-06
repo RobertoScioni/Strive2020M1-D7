@@ -1,0 +1,155 @@
+<html>
+  <!--
+        You have been assigned to the creation of a Smartphone Shop Website.
+        The shop is just a showcase of the products of the shop with some extra informations.
+        No shopping cart / checkout features are required.
+        EX1.: done
+        Add H1 title with the name of the shop
+        EX2.: done
+        Add a TABLE with the top 5 products of the shop
+        EX3.: done
+        Each product should have one image, title, description and price
+        EX4.: done
+        Add Map to the shop 
+        EX5.: done
+        Add the links to Amazon products for each item in the table
+        EX6.:done
+        Add a footer with the address and the name of the shop
+        EX7.: done
+        Add a message board where the user can type a message in it (only client side)
+        // EXTRA 
+        EX8.: done , click on the table caption to launch
+        Write a function to change the heading text
+        EX9.: done, click the phone photos to change the color
+        Write a function to change the page background color
+        EX10.: done, click the Heading (H1) to activate
+        Write a function to change the footer address with a fake one
+    -->
+
+  <head>
+    <title>One Store</title>
+    <link rel="stylesheet" href="M1-D6.css">
+    <script type="text/javascript" src="M1-D6.js"></script>
+  </head>
+  <body>
+    <H1 onclick="maskAddress()">The One Store</H1>
+    <table>
+
+      <caption><h2 onclick="eEgg()">best phones</h2></caption>
+
+      <tr class="Title">
+            <td class="bestPhone">
+              <h3>New iPhone SE Black</h3>
+            </td>
+            <td class="bestPhone">
+              <h3>Samsung Galaxy A51</h3>
+            </td>
+            <td class="bestPhone">
+              <h3>New iPhone SE Red</h3>
+            </td>
+            <td class="bestPhone">
+              <h3>Samsung Galaxy A21s</h3>
+            </td>
+            <td class="bestPhone">
+              <h3>New iPhone SE White</h3>
+            </td>
+      </tr>
+      <tr class="imgBox">
+            <td class="bestPhone">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/81nld4NtAkL._AC_SL1500_.jpg" alt="New iPhone SE nero" onclick="pgBg('Black')">
+            </td>
+            <td class="bestPhone">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/71T5Oy5tbhL._AC_SL1500_.jpg" alt="Samsung Galaxy A51"onclick="pgBg('Teal')">
+            </td>
+            <td class="bestPhone">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/81bmwNaVLfL._AC_SL1500_.jpg" alt="New iPhone SE Rosso" onclick="pgBg('Red')">
+            </td>
+            <td class="bestPhone">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/71SNxAZj%2BML._AC_SL1500_.jpg" alt="Samsung Galaxy A21s" onclick="pgBg('Grey')">
+            </td>
+            <td class="bestPhone">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/817NmEWIdwL._AC_SL1500_.jpg" alt="New iPhone SE bianco" onclick="pgBg('White')">
+            </td>
+      </tr>
+      <tr class="description">
+            <td class="bestPhone">
+                Marchio	Apple
+                Display Size	4.7 Pollici
+                Operating System	IOS 13
+                Capacità di memoria	128 GB
+                Colore	Nero
+                Tecnologia cellulari	2G
+                Other camera features	Frontale
+                Produttore CPU	Apple
+                Type of product	Classico
+                Livello di resistenza all'acqua	Impermeabile
+                Mostra meno
+                Informazioni su questo articolo
+                Display Retina HD da 4,7"
+                Resistente alla polvere e all’acqua (1 metro fino a 30 minuti, IP67)
+                Fotocamera da 12MP (grandangolo) con modalità Ritratto, Illuminazione ritratto, Controllo profondità, Smart HDR di nuova generazione e registrazione video 4K
+                Fotocamera anteriore da 7MP con modalità Ritratto, Illuminazione ritratto e Controllo profondità
+                Touch ID per l’autenticazione sicura e Apple Pay
+                Chip A13 Bionic con Neural Engine di terza generazione
+                Compatibile con la ricarica veloce
+                Ricarica wireless
+                iOS con Modalità scura, nuovi strumenti per ritoccare foto e video, e nuove funzioni per la privacy
+            </td>
+            <td class="bestPhone">
+                Samsung Galaxy A51 Smartphone, Display 6.5" Super AMOLED, 4 Fotocamere Posteriori, 128 GB Espandibili, RAM 4 GB, Batteria 4000 mAh, 4G, Dual Sim, Android 10, [Versione Italiana], Prism Crush Blu
+            </td>
+            <td class="bestPhone">
+                Display Retina HD da 4,7"
+                Resistente alla polvere e all’acqua (1 metro fino a 30 minuti, IP67)
+                Fotocamera da 12MP (grandangolo) con modalità Ritratto, Illuminazione ritratto, Controllo profondità, Smart HDR di nuova generazione e registrazione video 4K
+                Fotocamera anteriore da 7MP con modalità Ritratto, Illuminazione ritratto e Controllo profondità
+                Touch ID per l’autenticazione sicura e Apple Pay
+                Chip A13 Bionic con Neural Engine di terza generazione
+                Compatibile con la ricarica veloce
+            </td>
+            <td class="bestPhone">
+                Samsung Galaxy A21s, Smartphone, Display 6.5" HD+, 4 Fotocamere Posteriori, 32 GB Espandibili, RAM 3 GB, Batteria 5000 mAh, 4G, Dual Sim, Android 10, 192 g, [Versione Italiana], White
+            </td>
+            <td class="bestPhone">
+                Display Retina HD da 4,7"
+                Resistente alla polvere e all’acqua (1 metro fino a 30 minuti, IP67)
+                Fotocamera da 12MP (grandangolo) con modalità Ritratto, Illuminazione ritratto, Controllo profondità, Smart HDR di nuova generazione e registrazione video 4K
+                Fotocamera anteriore da 7MP con modalità Ritratto, Illuminazione ritratto e Controllo profondità
+                Touch ID per l’autenticazione sicura e Apple Pay
+                Chip A13 Bionic con Neural Engine di terza generazione
+                Compatibile con la ricarica veloce
+            </td>
+      </tr>
+      <tr class="Amazon-link">
+        <td class="bestPhone"><a href="https://www.amazon.it/Nuovo-Apple-iPhone-SE-128GB/dp/B0875FBGCQ">Amazon link</a></td>
+        <td class="bestPhone"><a href="https://www.amazon.it/Smartphone-Fotocamere-Posteriori-Espandibili-Batteria/dp/B082WN8SL4">Amazon link</a></td>
+        <td class="bestPhone"><a href="https://www.amazon.it/Nuovo-Apple-iPhone-SE-128GB/dp/B0875XHSTJ">Amazon link</a></td>
+        <td class="bestPhone"><a href="https://www.amazon.it/Samsung-Smartphone-Fotocamere-Posteriori-Espandibili/dp/B087XHF51M">Amazon link</a></td>
+        <td class="bestPhone"><a href="https://www.amazon.it/Nuovo-Apple-iPhone-SE-128GB/dp/B0875W18P6">Amazon link</a></td>
+      </tr>
+      <tr class="Price">
+        <td class="bestPhone">469€</td>
+        <td class="bestPhone">249.94€</td>
+        <td class="bestPhone">469€</td>
+        <td class="bestPhone">149€</td>
+        <td class="bestPhone">469€</td>
+      <tr>
+    </table>
+
+    <table>
+      <tr>
+        <td class="bottomPane">
+          <div id="chat"></div>
+          <input id="message" type="text" on> <input id="send" type="button" value="send" onclick="send()">
+        </td>
+        <td class="bottomPane">
+          <!--embedded map-->
+          <iframe id="MAP" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.6180212447034!2d14.754585797958647!3d46.08960292089428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47653b822763d9a3%3A0x6a751a819fc90794!2sKapelica!5e0!3m2!1sen!2sit!4v1601904551492!5m2!1sen!2sit" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">embedded google map</iframe>          
+        </td>
+      </tr>      
+    </table>
+    <footer>
+      <address>Kresniške Poljane 25, 1281 Kresnice, Slovenia</address>
+    </footer>
+  </body>
+</html>
