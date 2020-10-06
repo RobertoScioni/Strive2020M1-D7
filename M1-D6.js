@@ -15,6 +15,9 @@ pgBg=(color)=>{
 }
 
 maskAddress=()=>{
-    document.querySelector("address").innerText="4626  Stonepot Road,Belle Mead"
-    document.querySelector("#MAP").remove()
+    if (document.querySelector("#MAP")!==null) {
+        document.querySelector("address").innerText="4626  Stonepot Road,Belle Mead"
+        document.querySelector("#MAP").remove()        
+    }
+
 }

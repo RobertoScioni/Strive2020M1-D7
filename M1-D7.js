@@ -1,3 +1,15 @@
+//excercise 1
+const load=()=>{
+    confirm("WELCOME!!!")         //exercise 1
+    document.querySelector("H1").addEventListener("mouseenter",addClassToTitle)         //exercise3
+    document.querySelector("H1").addEventListener("mouseleave",removeClassFromTitle)    //exercise3
+    makeThemMagnifiable()       //exercise 9
+    makeItClickable()           //exercise 10
+
+}
+
+window.addEventListener("load",load)
+
 //Exercise 2
     const changeTitle = (newTitle)=> {
         document.querySelector("title").innerText="A wizard is never late, nor is he early, he arrives precisely when he means to."
@@ -78,11 +90,3 @@
     const rndColor=(e)=>{
         e.srcElement.style.color=Math.round(Math.random()*16777215).toString(16)
     }
-//excercise 1
-const load=()=>{
-    alert("WELCOME!!!")
-    makeThemMagnifiable()
-    makeItClickable()
-    document.querySelector("H1").addEventListener("mouseenter",addClassToTitle)
-    document.querySelector("H1").addEventListener("mouseleave",removeClassFromTitle)
-}
