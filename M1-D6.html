@@ -5,13 +5,21 @@
     <script type="text/javascript" src="M1-D6.js"></script>
     <script type="text/javascript" src="M1-D7.js"></script> <!--script file for today's assignment-->
     <script> <!--Excercise 1-->
-      window.onload=load() 
+      window.onload=()=>{
+        alert("WELCOME!!!")
+        makeThemMagnifiable()
+        makeItClickable()
+        document.querySelector("H1").addEventListener("mouseenter",addClassToTitle)
+        document.querySelector("H1").addEventListener("mouseleave",removeClassFromTitle)
+      } 
     </script>
   </head>
   <body>
-    <H1 onclick="maskAddress()">The One Store</H1>
-    <table>
+    <header>
+        <H1 onclick="maskAddress()">The One Store</H1>
+    </header>
 
+    <table>
       <caption><h2 onclick="eEgg()">best phones</h2></caption>
 
       <tr class="Title">
@@ -141,6 +149,7 @@
                   <p>This text is just for the exercise</p>
               </div>
     <!--end of code pasted for exercise 4-->
+          <section id="controlPanel">
               <input type="button" value="exercise4" onclick="changeP()">
               <input id="newTitle" type="text" value="click on Todo List to change the title with the content of this box"><br>
               <input id="newElement"type="text" value="new send list item"><input type="button" onclick="addToTheSecond()" value="send"><br>
@@ -149,6 +158,7 @@
               <input type="button" value="toggle magnifing glass" onclick="makeThemMagnifiable()"><br>
               <input type="button" value="toggleShowImages" onclick="toggleShowImages()"><br>
               <input type="button" value="makeItClickable" onclick="makeItClickable()">
+          </section>
     <footer>
       <address>Kresniške Poljane 25, 1281 Kresnice, Slovenia</address>
     </footer>

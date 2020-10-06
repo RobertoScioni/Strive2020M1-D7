@@ -80,7 +80,7 @@
     }
 //excercise 1
 const load=()=>{
-   // alert("WELCOME!!!")
+    alert("WELCOME!!!")
     makeThemMagnifiable()
     makeItClickable()
     document.querySelector("H1").addEventListener("mouseenter",addClassToTitle)
