@@ -1,35 +1,12 @@
 <html>
-  <!--
-        You have been assigned to the creation of a Smartphone Shop Website.
-        The shop is just a showcase of the products of the shop with some extra informations.
-        No shopping cart / checkout features are required.
-        EX1.: done
-        Add H1 title with the name of the shop
-        EX2.: done
-        Add a TABLE with the top 5 products of the shop
-        EX3.: done
-        Each product should have one image, title, description and price
-        EX4.: done
-        Add Map to the shop 
-        EX5.: done
-        Add the links to Amazon products for each item in the table
-        EX6.:done
-        Add a footer with the address and the name of the shop
-        EX7.: done
-        Add a message board where the user can type a message in it (only client side)
-        // EXTRA 
-        EX8.: done , click on the table caption to launch
-        Write a function to change the heading text
-        EX9.: done, click the phone photos to change the color
-        Write a function to change the page background color
-        EX10.: done, click the Heading (H1) to activate
-        Write a function to change the footer address with a fake one
-    -->
-
   <head>
     <title>One Store</title>
     <link rel="stylesheet" href="M1-D6.css">
     <script type="text/javascript" src="M1-D6.js"></script>
+    <script type="text/javascript" src="M1-D7.js"></script> <!--script file for today's assignment-->
+    <script> <!--Excercise 1-->
+      window.onload=load() 
+    </script>
   </head>
   <body>
     <H1 onclick="maskAddress()">The One Store</H1>
@@ -148,6 +125,23 @@
         </td>
       </tr>      
     </table>
+    <!--code pasted for excercise 4-->
+        <h2 id="listTitle">Todo List</h2>
+              <ul id="firstList">
+                  <li><p>1st</p></li>
+                  <li>2nd</li>
+                  <li>3rd</li>
+              </ul>
+              <ul id="secondList">
+                  <li>1st</li>
+                  <li>2nd</li>
+                  <li>3rd</li>
+              </ul>
+              <div>
+                  <p>This text is just for the exercise</p>
+              </div>
+    <!--end of code pasted for exercise 4-->
+              <input type="button" value="exercise4" onclick="changeP()">
     <footer>
       <address>Kresniške Poljane 25, 1281 Kresnice, Slovenia</address>
     </footer>
